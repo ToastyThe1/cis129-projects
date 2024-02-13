@@ -1,0 +1,66 @@
+# Lab practice
+print('*' * 40)
+print('The Coffee and Muffin Shop')
+
+# Inpug how many coffee ordered
+print('How many coffees ordered:')
+v1 = input("Coffee")
+v1_title = "Coffee:"
+v1_price = 5.00
+
+
+# input how many muffins ordered
+print('How many muffins ordered: ')
+v2 = input('Muffins:')
+v2_title = "Muffin"
+v2_price = 4.00
+
+items_sold = 4
+
+print('*' * 40)
+
+# receipt practice
+print("\tPlease your receipt!(: ")
+
+print('')
+#store name
+store_name = "The Coffee and Muffin Shop"
+
+# product names and prices
+v1_name, v1_price = "Coffee", 5.00
+v2_name,v2_price = "Muffin", 4.00
+v2_name,v2_price = "Muffin", 4.00
+v1_name, v1_price = "Coffee", 5.00
+
+
+# calculate subtotal without tax
+sub_total = v1_price + v2_price+v2_price + v1_price
+
+#Calculate sales tax
+sales_tax = (sub_total * .06)
+
+#calculate grand total
+grand_total = sub_total + sales_tax
+# End message
+appreciation_message = "Have a bless day and see you again!"
+
+print("*" *44)
+print(f"\t{(store_name.title())}")
+print("*" * 44)
+
+# list items ordered
+print(f"{v1_name.upper()}\t\t\t\t{v1_price: .2f}")
+print(f"{v2_name.upper()}\t\t\t\t{v2_price: .2f}")
+print(f"{v2_name.upper()}\t\t\t\t{v2_price: .2f}")
+print(f"{v1_name.upper()}\t\t\t\t{v1_price: .2f}")   
+# decoration line print('-' * 40)
+# calculate subtotal
+print(f"Subtotal\t\t\t${sub_total:.2f}")
+print(f"Sales Tax 6%\t\t\t${sales_tax:.2f}")
+
+print(f"\t\tGrand Total\t${grand_total:.2f}")
+
+print()
+print(f"\tTOTAL OF NUMBER ITEM SOLD = {items_sold}")
+
+print(f"\t\t{appreciation_message}")
